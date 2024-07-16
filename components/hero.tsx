@@ -23,7 +23,11 @@ const Hero = () => {
           <p className="text-center mb-4 capitalize md:tracking-wider text-sm md:text-lg lg:text-2xl">
             Hi I&apos;m Mohamed Gamal, a Front-End and Cross-Platform Developer
           </p>
-          <a href="#about" className="mt-4">
+          <a
+            href="#about"
+            className="mt-4
+          "
+          >
             <MagicButton text="About Mohamed" />
           </a>
         </div>
