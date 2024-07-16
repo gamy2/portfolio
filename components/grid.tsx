@@ -7,6 +7,7 @@ const Grid = () => {
   return (
     <section id="anout">
       <BentoGrid>
+        {/* TODO: change the data in girdItems form folder @data/index.ts */}
         {gridItems.map((item, ind) => (
           <BentoGridItem
             id={item.id}
