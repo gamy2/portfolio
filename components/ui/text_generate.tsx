@@ -6,9 +6,11 @@ import { cn } from "@/lib/utils";
 export const TextGenerateEffect = ({
   words,
   className,
+  ind,
 }: {
   words: string;
   className?: string;
+  ind: number;
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
@@ -23,7 +25,7 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2),
       }
     );
-  }, [scope.current]);
+  }, [animate]);
 
   const renderWords = () => {
     return (
@@ -33,7 +35,7 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               className={` 
-                ${idx > 5 ? "text-purple-400" : "dark:text-white text-black"}
+                ${idx > ind ? "text-purple-400" : "dark:text-white text-black"}
                opacity-0 `}
             >
               {word}{" "}

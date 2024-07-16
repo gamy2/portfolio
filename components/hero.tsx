@@ -3,6 +3,7 @@ import React from "react";
 import { Spotlight } from "./ui/spotlight";
 import { DotBackgroundDemo } from "./ui/background";
 import { TextGenerateEffect } from "./ui/text_generate";
+import MagicButton from "./ui/magic_button";
 
 const Hero = () => {
   return (
@@ -17,10 +18,14 @@ const Hero = () => {
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl capitalize"
             words="transforming your dreams and ideas into Seamless websites"
+            ind={5}
           />
           <p className="text-center mb-4 capitalize md:tracking-wider text-sm md:text-lg lg:text-2xl">
             Hi I&apos;m Mohamed Gamal, a Front-End and Cross-Platform Developer
           </p>
+          <a href="#about" className="mt-4">
+            <MagicButton text="About Mohamed" />
+          </a>
         </div>
       </div>
     </div>
