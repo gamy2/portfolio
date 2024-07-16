@@ -12,11 +12,11 @@ const Hero = () => {
       <DotBackgroundDemo />
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="text-blue-100 uppercase text-xs text-center max-w-80">
+          <h2 className="text-blue-100 uppercase text-sm text-center max-w-80 ">
             Using Next.js
           </h2>
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl capitalize"
+            className="text-center text-[28px] md:text-5xl lg:text-6xl capitalize"
             words="transforming your dreams and ideas into Seamless websites"
             ind={5}
           />
