@@ -1,6 +1,5 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento_grid";
-import { title } from "process";
 import { gridItems } from "@/data";
 
 const Grid = () => {
@@ -8,7 +7,7 @@ const Grid = () => {
     <section id="anout">
       <BentoGrid>
         {/* TODO: change the data in girdItems form folder @data/index.ts */}
-        {gridItems.map((item, ind) => (
+        {gridItems.map((item) => (
           <BentoGridItem
             id={item.id}
             key={item.id}
