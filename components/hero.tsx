@@ -7,7 +7,7 @@ import MagicButton from "./ui/magic_button";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-16">
       <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" />
       <DotBackgroundDemo />
       <div className="flex justify-center relative my-20 z-10">
@@ -16,11 +16,11 @@ const Hero = () => {
             Using Next.js
           </h2>
           <TextGenerateEffect
-            className="text-center text-[28px] md:text-5xl lg:text-6xl capitalize"
-            words="transforming your dreams and ideas into Seamless websites"
-            ind={5}
+            className="text-center text-[28px] md:text-5xl lg:text-5xl capitalize"
+            words="transforming your dreams  into Seamless websites"
+            ind={4}
           />
-          <p className="text-center mb-4 capitalize md:tracking-wider text-sm md:text-lg lg:text-2xl">
+          <p className="text-center mb-4 capitalize md:tracking-wider text-sm md:text-lg lg:text-xl">
             Hi I&apos;m Mohamed Gamal, a Front-End and Cross-Platform Developer
           </p>
           <a
